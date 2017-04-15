@@ -23,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-            <?php foreach($products as $product) : ?>
+            <?php foreach ($products as $product) : ?>
                 <tr>
                     <td><?php echo $product->getId();?></td>
                     <td><?php echo $product->getName();?></td>

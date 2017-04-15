@@ -18,16 +18,14 @@ $action = isset($_GET['action']) ? $_GET['action'] : 'index';
 
 
 
-switch($page){
-    case 'cart' :
+switch ($page) {
+    case 'cart':
         $sessionCart = new App\Model\Shopping\CartSession();
         $cart = new App\Controller\Cart($productRepository, $sessionCart);
         call_user_func_array(array($cart, $action), array());
     break;
 
-    default :
+    default:
         $home = new App\Controller\Home($productRepository);
         call_user_func_array(array($home, $action), array());
 }
-
-

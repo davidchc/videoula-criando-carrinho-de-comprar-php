@@ -33,7 +33,7 @@
             </tr>
         </tfoot>
         <tbody>
-        <?php foreach($cartItems as $item) : ?>
+        <?php foreach ($cartItems as $item) : ?>
             <tr>
                 <td><?php echo $item->getProduct()->getId()?></td>
                 <td><?php echo $item->getProduct()->getName()?></td>

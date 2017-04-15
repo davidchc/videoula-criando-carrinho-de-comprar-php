@@ -2,10 +2,8 @@
 
 namespace App\Model\Product;
 
-
-interface ProductRepository {
-
+interface ProductRepository
+{
     public function getProducts();
     public function getProduct($id);
-
-} 
+}
