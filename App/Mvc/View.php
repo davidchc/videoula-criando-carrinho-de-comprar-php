@@ -8,7 +8,7 @@ class View
 
     public function __construct()
     {
-        $this->folder  = DIR.DS.'App'.DS.'view'.DS;
+        $this->folder  = DIR.DS.'App'.DS.'View'.DS;
     }
 
     public function set($key, $value)
